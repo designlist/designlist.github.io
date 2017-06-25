@@ -1,0 +1,28 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+}
+
+.container {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+	margin-bottom: 50px;
+	margin-top: 200px;
+	color: #333;
+}
+
+h1 span {
+	color: #FC6258;
+}
+
+p {
+	margin: 0px;
+	font-size: 18px;
+	line-height: 26px;
+	color: #7C7C7C;
+}
