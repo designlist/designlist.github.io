@@ -21,15 +21,15 @@
        </script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        <script>
-        $(document).ready(function(){
-    $("a[href*=#]").on("click", function(e){
-        var anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-        }, 777);
-        e.preventDefault();
-        return false;
-    });
+        $(document).ready(function() {
+  $("a.scrollto").click(function() {
+    var elementClick = $(this).attr("href")
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+    return false;
+  });
 });
         </script>
     </head>
@@ -43,7 +43,7 @@
             <div class="updates">
                 <span class="updates-new">NEW</span><span class="updates-title">обновления</span>
                 <div class="updates-item">
-                    <a href="#photo">Фотографии</a><span class="update-date">22.07.2017</span>
+                    <a href="#photo" class="scrollto">Фотографии</a><span class="update-date">22.07.2017</span>
                 </div>
             </div>
 
