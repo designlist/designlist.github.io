@@ -19,6 +19,22 @@
           ga('create', 'UA-101772868-1', 'auto');
           ga('send', 'pageview');
        </script>
+       <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+       <script>
+        $(document).ready(function(){
+            // Плавный скролл по якорям
+            $('a[href^="#"]').click(function () { 
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().top;
+                if($.browser.safari){
+                $('body').animate( { scrollTop: destination }, 1000 );
+                } else {
+                    $('html').animate( { scrollTop: destination }, 1000 );
+                }
+                return false;
+            });
+        });
+        </script>
     </head>
     <body>
         <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45146727 = new Ya.Metrika({ id:45146727, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45146727" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
@@ -26,6 +42,13 @@
 
             <h1>Ресурсы для <span>дизайнеров<span></h1>
             <p>Ниже представлена подборка самых интересных сервисов для дизайнеров. С&nbsp;некоторыми из&nbsp;них&nbsp;вы&nbsp;уже&nbsp;сталкивались, а&nbsp;некоторые, возможно, станут приятной находкой и&nbsp;помогут сэкономить ваше драгоценное время.</p>
+
+            <div class="updates">
+                <span class="updates-new">NEW</span><span class="updates-title">обновления</span>
+                <div class="updates-item">
+                    <a href="#photo">Фотографии</a><span class="update-date">22.07.2017</span>
+                </div>
+            </div>
 
             <h2><span>01</span>&nbsp;Вдохновение</h2>
             <div class="column-left">
@@ -273,6 +296,51 @@
                 <div class="list-item">
                     <a href="https://99designs.com/" target="_blank" class="img"><img src="favs/99designs.png"></a>
                     <a href="https://99designs.com/" target="_blank" class="link">99designs.com</a>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <h2 class="h2new"><span>05</span>&nbsp;Фотографии</h2><span class="new">NEW</span>
+
+            <div class="clear" id="photo" name="photo"></div>
+
+            <div class="column-left">
+                <h3>Бесплатные</h3>
+                <div class="list-item">
+                    <a href="https://pixabay.com/" target="_blank" class="img"><img src="favs/pixabay.png"></a>
+                    <a href="https://pixabay.com/" target="_blank" class="link">pixabay.com</a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.pexels.com/" target="_blank" class="img"><img src="favs/pexels.png"></a>
+                    <a href="https://www.pexels.com/" target="_blank" class="link">pexels.com</a>
+                </div>
+                <div class="list-item">
+                    <a href="https://unsplash.com/" target="_blank" class="img"><img src="favs/unsplash.png"></a>
+                    <a href="https://unsplash.com/" target="_blank" class="link">unsplash.com</a>
+                </div>
+                <div class="list-item">
+                    <a href="https://www.sitebuilderreport.com/stock-up" target="_blank" class="img"><img src="favs/stockup.png"></a>
+                    <a href="https://www.sitebuilderreport.com/stock-up" target="_blank" class="link">stock up</a>
+                </div>
+            </div>
+            <div class="column-right">
+                <h3>Платные</h3>
+                <div class="list-item">
+                    <a href="https://www.shutterstock.com/" target="_blank" class="img"><img src="favs/shutterstock.png"></a>
+                    <a href="https://www.shutterstock.com/" target="_blank" class="link">shutterstock.com</a>
+                </div>
+                <div class="list-item">
+                    <a href="https://500px.com" target="_blank" class="img"><img src="favs/500px.png"></a>
+                    <a href="https://500px.com" target="_blank" class="link">500px.com</a>
+                </div>
+                <div class="list-item">
+                    <a href="http://www.istockphoto.com" target="_blank" class="img"><img src="favs/istockphoto.png"></a>
+                    <a href="http://www.istockphoto.com" target="_blank" class="link">istockphoto.com</a>
+                </div>
+                <div class="list-item">
+                    <a href="https://stock.adobe.com/" target="_blank" class="img"><img src="favs/stockadobe.png"></a>
+                    <a href="https://stock.adobe.com/" target="_blank" class="link">stock.adobe.com</a>
                 </div>
             </div>
 
