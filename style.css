@@ -91,7 +91,7 @@ img {
 	clear: both;
 }
 
-.full-width {
+.inside {
 	margin-top: 50px;
 }
 
@@ -152,25 +152,38 @@ img {
 }
 
 .updates-item {
+	margin-bottom: 8px;
+}
+
+.updates-item:last-child {
+	margin-bottom: 0;
+}
+
+.updates-items {
 	font-weight: 700;
 	margin-top: 16px;
 }
 
-.updates-item a {
+.updates-items a {
 	color: #333;
 }
 
-.updates-item a:hover {
+.updates-items a:hover {
 	color: rgb(0,120,255);
 }
 
 .update-date {
-	margin-left: 28px;
+	font-size: 13px;
+	margin-left: 18px;
 	font-weight: 400;
 	color: #7c7c7c;
 }
 
+.ya-share2 {
+	margin-bottom: 100px;
+}
+
 .footer {
 	margin-top: 150px;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
